@@ -13,7 +13,9 @@ import org.junit.runner.RunWith;
 		features = { "src/test/resources/featureFiles" },
 		glue = { "webDriver", "stepDefinition", "testRunner" },
 		tags = { "~@ignore"},
-		plugin = {"pretty"})
+		plugin = {"pretty", "html:target/cucumber-reports",
+        "json:target/cucumber.json",
+      "rerun:target/rerun.txt"})
 public class TestRunner {
 	
 	public static Map<String, String> config;
