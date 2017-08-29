@@ -16,7 +16,7 @@ public class GoogleSearch_Action {
 
 	public static void search(String searchCriteria) {
 
-		String googleUrl = "https://www.google.co.uk";
+		String googleUrl = "https://www.google.com";
 		driver.get(googleUrl);
 		wait.until(ExpectedConditions.elementToBeClickable(HomePage.searchField()));
 
