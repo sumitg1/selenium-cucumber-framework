@@ -14,9 +14,9 @@ import testRunner.TestRunner;
 
 public class BrowserFactory {
 	
-	static Browser browser = Browser.valueOf(TestRunner.config.get("browser"));
+	static Browser browser = Browser.valueOf("Firefox");
 	
-	static String desiredBrowserVersion = TestRunner.config.get("browserVersion");
+	//static String desiredBrowserVersion = TestRunner.config.get("browserVersion");
 
 	public static DesiredCapabilities selectBrowser(DesiredCapabilities caps) {
 		
