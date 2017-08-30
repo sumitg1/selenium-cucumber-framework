@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'MAVEN_HOME') {
-                    sh 'mvn test -Dcucumber.options="--tags @search" -Dwebdriver.driver=firefox'
+                    sh 'mvn test'
                 }
             }
         }
