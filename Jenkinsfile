@@ -6,14 +6,7 @@ pipeline {
       }
  
      stages {
- 
-         stage('Checkout') {
-             steps {
-                 checkout scm
-                 stash 'src'
-             }
-         }
- 
+  
          stage('Run tests') {
              steps {
                  parallel branch1: {
