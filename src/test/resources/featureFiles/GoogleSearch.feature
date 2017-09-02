@@ -12,5 +12,5 @@ Feature: Search Google for links
   Scenario: Search for Facebook
     Given I want to go on "Facebook"
     When I search on Google
-    Then I should see the search results for "Facebook123"
+    Then I should see the search results for "Facebook"
 
